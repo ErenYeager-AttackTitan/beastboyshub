@@ -1,14 +1,15 @@
 {
   "name": "youtube-scraper-vercel",
   "version": "1.0.0",
-  "description": "A Node.js API to scrape YouTube videos using Puppeteer.",
+  "description": "A Node.js API to scrape YouTube videos using Puppeteer with Chrome for Lambda.",
   "main": "api/scrape.js",
   "scripts": {
     "start": "vercel dev",
     "build": "vercel build"
   },
   "dependencies": {
-    "puppeteer": "^21.3.8"
+    "puppeteer-core": "^21.3.8",
+    "chrome-aws-lambda": "^10.1.0"
   },
   "engines": {
     "node": ">=14.x"
